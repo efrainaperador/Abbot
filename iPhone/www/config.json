@@ -1,0 +1,27 @@
+{
+	"debug": false,
+	"version" : {
+		"value" : 1,
+		"name" : "d1.000"
+	},
+	"templates": "templates.html",
+	"ApiEndPoint" : "http://201.184.47.251/Abbott/webservice-login/",
+	"requestType" : "post",
+	"testing": {
+		"active": false,
+		"online": true,
+		"wifi": false
+	},
+	"appTitle" : "Abbott",
+	"preloader": {
+            "Game": [
+            "img/backgroound.jpg",
+            "img/backgroundLogin.jpg"
+            ]
+    }
+}
+
+
+
+
+

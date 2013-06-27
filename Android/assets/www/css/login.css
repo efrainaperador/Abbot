@@ -1,0 +1,12 @@
+#formLogin{
+	margin-top: 10%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+#formLogin input[type="email"], #formLogin input[type="password"]{
+	background-color: white;
+	padding: .5em;
+	border:0;
+}

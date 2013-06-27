@@ -1,0 +1,45 @@
+{
+	"debug": false,
+	"version" : {
+		"value" : 1,
+		"name" : "d1.000"
+	},
+	"templates": "templates.html",
+	"ApiEndPoint" : "http://201.184.47.251/Abbott/webservice-login/",
+	"ApiEndPoint2" : "http://201.184.47.251/Abbott/webservice-cargar-datos/",
+	"requestType" : "post",
+	"testing": {
+		"active": true,
+		"online": true,
+		"wifi": false,
+		"user" : "usernameTest",
+		"password" : "hzWO&@8V0J",			
+		"textfather": "carlos",
+		"textmother": "maria",
+         "textbaby": "juan",
+            "babySex": "M",
+            "textborndate": "2013-05-12",
+	        "textbornplace": "Tunja",
+	        "textclinic": "Hospital A",
+	        "textdoctor":"Mario",
+             "textemail": "carlos@gmail.com",
+             "textphone": "7405060",
+	         "textusername":"carlos",
+	         "textpassword":"1234",
+	         "textconfirmpassword": "1234",
+	         "acceptTerms": "N",
+	         "acceptInfo":"N"  
+	},
+	"appTitle" : "Abbott",
+	"preloader": {
+            "Game": [
+            "img/backgroound.jpg",
+            "img/backgroundLogin.jpg"
+            ]
+    }
+}
+
+
+
+
+

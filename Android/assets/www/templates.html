@@ -1,0 +1,234 @@
+<div>
+<script type="text/template" id="instructionsTemplate"> 
+<div id="InstructionsView" class="pageView loginBackground">
+	<div id="homeEmpezar">
+<img id="uplogo" src="img/logo_patrocinio.png">
+<div id="instructionBox">	
+	<p id="intro">
+		La Asociaci&oacute;n Colombiana de Neonatolog&iacute;a (A.S.C.O.N), pensado en los padres con beb&eacute;s prematuros ha creado esta herramineta para acompañarte en esta linda etapa de tu vida
+	</p>
+		<p class="instructionsText">Accede a informaci&oacute;n especializada sobre el desarrollo de tu beb&eacute; prematuro</p>
+		<p class="instructionsText">Crea recordatorios sobre citas m&eacute;dicas o cualquier otro evento</p>
+		<p class="instructionsText">Guarda un diario de tu beb&eacute; con las fotograf&iacute;as de sus mejores momentos</p>	
+	<div id="start">
+    </div>
+</div>
+</div>
+</div>
+</script>
+
+<script type="text/template" id="loginTemplate"> 
+<div id="LoginView" class="pageView loginBackground">
+	<form id="formLogin">
+		<input type="email" id="text-username" placeholder="Usuario">
+		<input type="password" id="text-password" placeholder="Contraseña">
+		<div id="forgotPass">Olvidé mi contraseña</div>
+		<input type="submit" value="Entrar"/>
+	</form>
+	<div id="newUser">Usuario nuevo</div>
+</div>
+</script>
+
+<script type="text/template" id="forgotTemplate"> 
+<div id="ForgotView" class="pageView loginBackground">
+	<form id="formForgot">
+		<input type="email" id="textsword" id="text-password" placeholder="Contraseña">
+		<div id="forgotPass">Olvidé mi contraseña</div>
+		<input type="submit" value="Entrar"/>
+	</form>
+	<div id="newUser">Usuario nuevo</div>
+</div>
+</script>
+
+<script type="text/template" id="forgotTemplate"> 
+<div id="ForgotView" class="pageView loginBackground">
+	<form id="formForgot">
+		<input type="email" id="text-email" placeholder="Correo electrónico">
+		<div id="backToLogin">Volver al inicio de sesión</div>
+		<input type="submit" value="Enviar"/>
+	</form>
+</div>
+</script>
+
+<script type="text/template" id="ContentTemplate"> 
+<div id="ContentView" class="pageView">
+	<div id="MenuView"></div>
+	<div id="HeaderView">
+		<div id="mainHeaderButton"></div>
+		<div id="titleView">Titulo</div>
+		<div id="secondHeaderButton"></div>
+		<div id="MonthsList"></div>
+	</div>
+	<div id="ContainerView"></div>
+</div>
+</script>
+
+<script type="text/template" id="RegisterProfileTemplate"> 
+<div id="RegisterProfileView" class="pageView">
+	<form id="formRegister">
+		<input type="text" id="text-father" placeholder="Nombre del padre">*
+		<input type="text" id="text-mother" placeholder="Nombre de la madre">*
+		<input type="text" id="text-baby" placeholder="Nombre del bebé">*
+		Género del bebé 
+		<input type="radio" name="babySex" value="M">Niño<br>
+		<input type="radio" name="babySex" value="F">Niña*
+		<input type="date" id="text-borndate" placeholder="Día /Mes /Año">*
+		<input type="text" id="text-bornplace" placeholder="Lugar de nacimiento">*
+		<input type="text" id="text-clinic" placeholder="Clínica">
+		<input type="text" id="text-doctor" placeholder="Nombre del pediatra">
+		<input type="email" id="text-email" placeholder="Su correo electrónico">*
+		<input type="tel" id="text-phone" placeholder="Su teléfono">
+		<input type="text" id="text-username" placeholder="Ingrese un nombre de usuario">*
+		<input type="password" id="text-password" placeholder="Ingrese una contraseña">
+		<input type="password" id="text-confirmpassword" placeholder="Confirme su contraseña">
+		<input type="checkbox" name="acceptTerms" value="S"> Acepto <div id="goTerms">términos y condiciones</div>
+		<input type="checkbox" name="acceptInfo" value="S"> Deseo recibir información del programa en mi correo electrónico
+		<input type="submit" value="Registro"/>
+	</form>
+</div>
+</script>
+
+<script type="text/template" id="EditProfileTemplate"> 
+<div id="EditProfileView" class="pageView">
+	<form id="formEdit">
+		<input type="text" id="text-father" placeholder="Nombre del padre">*
+		<input type="text" id="text-mother" placeholder="Nombre de la madre">*
+		<input type="text" id="text-baby" placeholder="Nombre del bebé">*
+		Género del bebé 
+		<input type="radio" name="babySex" value="M">Niño<br>
+		<input type="radio" name="babySex" value="F">Niña*
+		<input type="date" id="text-borndate" placeholder="Día /Mes /Año">*
+		<input type="text" id="text-bornplace" placeholder="Lugar de nacimiento">*
+		<input type="text" id="text-clinic" placeholder="Clínica">
+		<input type="text" id="text-doctor" placeholder="Nombre del pediatra">
+		<input type="email" id="text-email" placeholder="Su correo electrónico">*
+		<input type="tel" id="text-phone" placeholder="Su teléfono">
+		<input type="checkbox" name="acceptInfo" value="S"> Deseo recibir información del programa en mi correo electrónico
+		<input type="submit" value="Actualizar"/>
+	</form>
+</div>
+</script>
+
+<script type="text/template" id="TermsTemplate"> 
+<div id="TermsView" class="pageView">
+</div>
+</script>
+
+<script type="text/template" id="MyBabyTemplate"> 
+<div id="MyBabyView" class="pageView">
+	<input type="button" id="buttonEditProfile" value="Editar Perfil" />
+	<div id="babyName">Nombre del bb</div>
+	<div id="stageDevelopment">
+		<p>Etapa de desarrollo</p>
+		<p id="stageMonths"></p>
+	</div>
+
+	<div id="dayTip">
+		<div>Tip del día</div>
+		<div id="showAllTips">Ver más</div>
+
+		<div id="dayTipImg"></div>
+		<div id="dayTipText"></div>
+	</div>
+
+	<div id="babyGallery">
+		<div>Diario</div>
+		<div id="showAllGalleries">Ver todo</div>
+		<div>Ultimas fotos</div>
+		
+		<div id="scrollGallery">
+		</div>
+	</div>
+
+
+	<div id="babyCalendar">
+		<div>Calendario</div>
+		<div id="showAllEvents">Ver todo</div>
+		<div>Próximos eventos</div>
+		
+		<div id="scrollEvents">
+
+		</div>
+	</div>
+</div>
+</script>
+
+<script type="text/template" id="rowBabyGalleryTemplate">
+<div id="rowBabyGalleryView">
+				<div id="babyGallery">
+					<div id="babyGalleryImg"></div>
+					<div id="babyGalleryDate">19/03/2013</div>
+					<div id="babyGalleryTitle">Visita de la abuela</div>
+				</div>
+</div>
+</script>
+
+<script type="text/template" id="StagesTemplate"> 
+<div id="StagesView" class="pageView">
+</div>
+</script>
+
+<script type="text/template" id="StageDetailTemplate"> 
+<div id="StageDetailView" class="pageView">
+</div>
+</script>
+
+<script type="text/template" id="TipsTemplate"> 
+<div id="TipsView" class="pageView">
+</div>
+</script>
+
+<script type="text/template" id="GalleryTemplate"> 
+<div id="GalleryView" class="pageView">
+	<div id="createGallery">Crear galeria</div>
+</div>
+</script>
+
+<script type="text/template" id="CreateGalleryTemplate"> 
+<div id="CreateGalleryView" class="pageView">
+	<form id="formCreateGallery">
+		Nombre de la galería
+		<input type="text" id="text-galleryname" placeholder="Fotos de mi bebé">* 
+		Descripción
+		<textarea rows="4" cols="50" placeholder="Escribe algo acerca de la colección de fotos" id="text-gallerydesc">
+		</textarea>
+		<input type="submit" value="Crear galería"/>
+	</form>
+</div>
+</script>
+
+<script type="text/template" id="EditGalleryTemplate"> 
+<div id="EditGalleryView" class="pageView">
+</div>
+</script>
+
+<script type="text/template" id="DetailGalleryTemplate"> 
+<div id="DetailGalleryView" class="pageView">
+</div>
+</script>
+
+<script type="text/template" id="PhotoDetailTemplate"> 
+<div id="PhotoDetailView" class="pageView">
+</div>
+</script>
+
+<script type="text/template" id="CalendarTemplate"> 
+<div id="CalendarView" class="pageView">
+</div>
+</script>
+
+<script type="text/template" id="DetailEventTemplate"> 
+<div id="DetailEventView" class="pageView">
+</div>
+</script>
+
+<script type="text/template" id="CreateEventTemplate"> 
+<div id="CreateEventView" class="pageView">
+</div>
+</script>
+
+<script type="text/template" id="EditEventTemplate"> 
+<div id="EditEventView" class="pageView">
+</div>
+</script>
+</div>

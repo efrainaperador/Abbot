@@ -1,0 +1,45 @@
+#homeEmpezar {
+	position: relative;
+	overflow: none;
+}
+
+#uplogo {
+	width: 55%;
+	margin-left: 23%;
+}
+
+#instructionBox {
+	-webkit-border-radius: 15px; 	
+	width: 70%;
+	border-radius: 15px;
+	margin:6% auto;
+	padding: 2em;
+	background-color:white;
+    
+}
+
+#intro {
+	color: #1c5666;
+	font-size: 0.7em;
+	font-weight: bold-italic;
+	font-family: TrebuchetBold;
+	text-align: center;	
+}
+
+.instructionsText {
+	color: #02afee;
+    line-height:1;
+    padding-left:0.5em;
+    padding-right:0.5em;
+	font-size: 0.7em;
+	font-family: Avenir;
+	text-align: center;
+	font-weight: bold;
+}
+
+#start {
+	height: 4.5em;
+	background-image: url(../img/empezar.png);
+	background-repeat: no-repeat;
+	background-size:100%;
+}

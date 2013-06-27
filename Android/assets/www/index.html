@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <title>Abbot</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/Main.css">
+		<link rel="stylesheet" href="css/InstructionsView.css">
+		<link rel="stylesheet" href="css/login.css">
+		<!-- MODERNIZR -->
+		<script src="js/lib/ui/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+    	<!-- <script src="http://192.168.1.3:8080/target/target-script-min.js#anonymous"></script> -->
+    	<div id="pages">
+		</div>
+        <script type="text/javascript">
+			var isAndroid = navigator.userAgent.toLowerCase().match(/android/);
+			var isIOS = navigator.userAgent.toLowerCase().match(/iphone/) || navigator.userAgent.toLowerCase().match(/ipad/);
+			
+			<!-- CORDOVA -->
+			if (isAndroid) {
+				document.write('<script charset="utf-8" src="cordova\/android\/cordova-2.7.0.js"><\/script>');
+				
+			} else if (isIOS) {
+				document.write('<script charset="utf-8" src="cordova\/ios\/cordova-2.7.0.js"><\/script>');
+			}
+		</script>
+		<!-- JQUERY -->
+		<script src="js/lib/ui/jquery-1.7.1.min.js"></script>
+		
+		<!-- LIBS -->
+		<script src="js/lib/pxloader/PxLoader.js"></script>
+		<script src="js/lib/pxloader/PxLoaderImage.js"></script>
+		<script src="js/lib/ui/underscore-min.js"></script>
+		<script src="js/lib/ui/backbone-min.js"></script>
+		<script src="js/lib/ui/jquery.url.js"></script>
+		<script src="js/lib/ui/iscroll-min.js"></script>
+		<script src="js/lib/ui/jquery.blockUI.js"></script>
+	
+		<!-- VIEW MANAGER -->
+		<script src="js/lib/ui/View.js"></script>
+		<script src="js/lib/ui/ViewManager.js"></script>
+	
+		<!-- Views -->
+		<script src="js/views/MainPageManager.js"></script>
+		
+		<!-- Login Views -->
+		<script src="js/views/login/InstructionsView.js"></script>
+		<script src="js/views/login/LoginView.js"></script>
+		<script src="js/views/login/ForgotView.js"></script>
+		
+		<!-- Content Views -->
+		<script src="js/views/main/ContentView.js"></script>
+		<script src="js/views/main/ContentManager.js"></script>
+		<script src="js/views/main/MyBabyView.js"></script>
+		<script src="js/views/main/TipsView.js"></script>
+		
+			<!-- Profile Views -->
+			<script src="js/views/main/profile/RegisterProfileView.js"></script>
+			<script src="js/views/main/profile/TermsView.js"></script>
+			<script src="js/views/main/profile/EditProfileView.js"></script>
+			
+			<!-- Stages Views -->
+			<script src="js/views/main/stages/StagesView.js"></script>
+			<script src="js/views/main/stages/StageDetailView.js"></script>
+			
+			<!-- Gallery Views -->			
+			<script src="js/views/main/gallery/GalleryView.js"></script>
+			<script src="js/views/main/gallery/CreateGalleryView.js"></script>
+			<script src="js/views/main/gallery/EditGalleryView.js"></script>
+			<script src="js/views/main/gallery/DetailGalleryView.js"></script>
+			<script src="js/views/main/gallery/PhotoDetailView.js"></script>
+			<script src="js/views/main/gallery/RowBabyGalleryView.js"></script>
+			
+			<!-- Calendar Views -->			
+			<script src="js/views/main/calendar/CalendarView.js"></script>
+			<script src="js/views/main/calendar/DetailEventView.js"></script>
+			<script src="js/views/main/calendar/CreateEventView.js"></script>
+			<script src="js/views/main/calendar/EditEventView.js"></script>
+			
+				
+		<!-- MODELS -->
+		<script src="js/models/Server.js"></script>
+		<script src="js/models/App.js"></script>
+		
+		<!-- UTILS -->
+		<script src="js/utils/utils.js"></script>
+		<script src="js/utils/helper.js"></script>
+	
+		<!-- MAIN -->
+		<script src="js/main.js"></script>
+    </body>
+</html>
